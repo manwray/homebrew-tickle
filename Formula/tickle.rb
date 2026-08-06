@@ -1,15 +1,15 @@
 # Source-of-truth template for the homebrew tap formula (0626, feat/local-launcher).
-# .github/workflows/release.yml renders this on every v* tag — swapping https://github.com/manwray/homebrew-tickle/releases/download/v0.6.42/tickle-0.6.42-darwin-universal.tar.gz,
-# aeb786550faae94ce45a7898841dcb1870d797d414a4db0871d0efddc8442e1f, 0.6.42 for the just-published darwin universal tarball — and pushes
+# .github/workflows/release.yml renders this on every v* tag — swapping https://github.com/manwray/homebrew-tickle/releases/download/v0.6.43/tickle-0.6.43-darwin-universal.tar.gz,
+# b661d551bec3fff5d4031ac6c56d305e3d06d597d1d890dc7ee2a0b997ec44b2, 0.6.43 for the just-published darwin universal tarball — and pushes
 # the result to manwray/homebrew-tickle as Formula/tickle.rb (bump-on-release; no
 # hand-editing). The committed Formula/tickle.rb in this repo is a rendered example
 # of this template; brew always reads the tap copy.
 class Tickle < Formula
   desc "Client CLI for the tickle board server"
   homepage "https://github.com/manwray/tickle"
-  url "https://github.com/manwray/homebrew-tickle/releases/download/v0.6.42/tickle-0.6.42-darwin-universal.tar.gz"
-  sha256 "aeb786550faae94ce45a7898841dcb1870d797d414a4db0871d0efddc8442e1f"
-  version "0.6.42"
+  url "https://github.com/manwray/homebrew-tickle/releases/download/v0.6.43/tickle-0.6.43-darwin-universal.tar.gz"
+  sha256 "b661d551bec3fff5d4031ac6c56d305e3d06d597d1d890dc7ee2a0b997ec44b2"
+  version "0.6.43"
   license "MIT"
 
   # darwin-only for v1 (the tarball is a universal binary: arm64 + amd64).
